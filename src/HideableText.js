@@ -11,14 +11,14 @@ export default class HideableText extends React.Component {
 
     toggleIsHidden () {
         this.setState ((currentState) => ({
-            isHidden: currentState.isHidden,
-    }))
+            isHidden: !currentState.isHidden,
+    }));
 }
 
     render () {
         return (
             <div>
-                <button>Toggle</button>
+                <button onClick={() => this.toggleIsHidden()}>Toggle</button>
                 {!this.state.isHidden && this.props.text}
             </div>
 
