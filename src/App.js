@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
-import AutocompleteText from './AutocompleteText';
+import SearchPage from './SearchPage'
+
 
 
 function App() {
   return (
     <div className="App">
       <div className="App-Component">
-        <AutocompleteText />
+        <SearchPage />
       </div>
     </div>
   );
