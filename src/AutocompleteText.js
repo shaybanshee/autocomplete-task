@@ -10,8 +10,7 @@ export default class AutocompleteText extends React.Component{
     }
 
     componentWillMount(){
-        
-        
+           
     }
 
     onData = (response) => {
