@@ -4,14 +4,13 @@ import './utils/jsonp'
 
 
 export default class AutocompleteText extends React.Component{
-    state = {
-        suggestions: [], 
+   
+        state = {
+            suggestions: [], 
             text: '',
-    }
+            option: 0,
+            }
 
-    componentWillMount(){
-           
-    }
 
     onData = (response) => {
         this.setState({ suggestions: response.results }, () => this.isLoading = false)
@@ -35,6 +34,25 @@ export default class AutocompleteText extends React.Component{
         this.setState({ text: value }, this.requestSuggestions)        
     }
 
+    handleKeyPress = (e) => {
+        console.dir(e.key)
+        //listener method to determine value of key pressed 
+        if (e.key === 'ArrowDown' && this.state.suggestions.length - 1 != this.state.option) {
+            this.setState({option: this.state.option + 1 }) 
+        }
+        else if (e.key === 'ArrowUp' && this.state.option != 0) {
+            this.setState({option: this.state.option - 1 })
+        }
+        else if (e.key === 'Enter') {
+            const { url } = this.state.suggestions[this.state.option];
+            this.setState(() => ({
+            text: '',
+            suggestions: [],
+            }), () => window.open(url))
+        }
+    }
+        
+
     suggestionsSelected = (e) => {
         const { url } = e.target.dataset
         this.setState(() => ({
@@ -51,7 +69,7 @@ export default class AutocompleteText extends React.Component{
         return (
             <ul>
                 {suggestions.map((item, idx) => 
-                    <li key={item.id + idx} data-url={item.url} onClick={this.suggestionsSelected}>
+                    <li className={this.state.option == idx ? "selectedOption" : ''} key={item.id + idx} data-url={item.url} onClick={this.suggestionsSelected}>
                         {item.name}
                     </li>)}
             </ul>
@@ -62,12 +80,13 @@ export default class AutocompleteText extends React.Component{
         const { text } = this.state
         return (
             <div className="AutocompleteText">
-                <input value={text}  onChange={this.onTextChanged} type="text" />
+                <input value={text}  onChange={this.onTextChanged} onKeyDown={this.handleKeyPress} type="text" />
                {this.renderSuggestions()}
             </div>
         )
     }
 }
+
 
 
 

@@ -28,6 +28,11 @@
   color: #61dafb;
 }
 
+.selectedOption {
+  color: rgba(100, 181, 100, 1);
+  opacity: 50%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
