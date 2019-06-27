@@ -14,7 +14,7 @@ in my refactoring process.
 4. After IDing the keys using the JS console, I was able to update the state with each handleKeyPress instance. 
 5. To keep each portion component based and accessible; the tree structure divorces the "Autocomplete Component" from the 
    JSONquery.
-6. I styled 1 instance and collapsed my CSS files into 1 file. By switching out the CSS file import in the .js files; n
+6. I styled 1 instance and collapsed my CSS files into 1 file. By switching out the CSS file import in the .js files, no
    changes to the root index is required. 
 7. I am currently battling the beginnings of a sinus infection. So I'm going to try to deliver this next file in my last 
    commit. I'm just being honest with my limitations, as life happens, even when you're trying to progress your career. 
