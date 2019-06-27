@@ -18,7 +18,8 @@ in my refactoring process.
    changes to the root index is required. 
 7. I am currently battling the beginnings of a sinus infection. So I'm going to try to deliver this next file in my last 
    commit. I'm just being honest with my limitations, as life happens, even when you're trying to progress your career. 
-8. Thank you for visiting my app! 
+8. Second .CSS style added. just edit the import on AutocompleteText.js to './Style2/AutocompleteText.css' 
+9. Thanks!
 
 
 
