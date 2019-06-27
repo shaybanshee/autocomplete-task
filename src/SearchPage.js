@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import AutocompleteText from './AutocompleteText';
-import './index.css';
+import './AutocompleteText.css';
 
 
 
@@ -9,7 +9,7 @@ class SearchPage extends Component {
     render() {
         return (
         <div>
-        <div className="App-welcome">Thirst for knowledge?</div>
+        <div className="header">Thirst for knowledge?</div>
         <AutocompleteText jsonpURL={this.jsonpURL} />
         </div>
         )}

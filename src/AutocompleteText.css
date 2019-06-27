@@ -41,3 +41,44 @@
     background-color: rgba(128, 128, 128, 0.20 );
 
 }
+
+body {
+    margin: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(204,242,228);
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+
+  .App {
+    text-align: center;
+  }
+  
+  .header{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300; 
+    font-size: 3rem;
+    color: rgb(89,164,77);
+    padding-bottom: 2rem;
+  
+  }
+  
+  .App-Component {
+    margin: 150px auto 0 auto;
+    width: 30rem;
+  }
+  
+  .selectedOption {
+    color: rgba(100, 181, 100, 1);
+    opacity: 50%;
+    align-content: flex-start;
+  }
+  
