@@ -4,7 +4,7 @@ If you are here that means you're looking to use this Autocomplete component I'v
 
 My Process:
 
-My journey to to Front-End is still fairly new; so I worked with tutorials and some support from fellow mentors
+My journey into Front-End is still fairly new(I was living in Rails and C# before this!); so I worked with tutorials and some support from fellow mentors
 in my refactoring process. 
 
 1. I initially built a hardcoded data set, utilizing the state and implementing the onClick, hover functionality on the list. 
