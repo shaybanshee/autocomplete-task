@@ -1,3 +1,41 @@
+Hello!
+
+If you are here that means you're looking to use this Autocomplete component I've iterated upon.
+
+My Process:
+
+My journey into Front-End is still fairly new(I was living in Rails and C# before this!); so I worked with tutorials and some support from fellow mentors
+in my refactoring process. 
+
+1. I initially built a hardcoded data set, utilizing the state and implementing the onClick, hover functionality on the list. 
+2. I then included the JSONPUtil file to call the college data set from the sample html file given. 
+3. At this point I worked with a senior engineer and mentor to refactor and create the handler function for the key commands
+   to scroll through the list. 
+4. After IDing the keys using the JS console, I was able to update the state with each handleKeyPress instance. 
+5. To keep each portion component based and accessible; the tree structure divorces the "Autocomplete Component" from the 
+   JSONquery.
+6. I styled 1 instance and collapsed my CSS files into 1 file. By switching out the CSS file import in the .js files; n
+   changes to the root index is required. 
+7. I am currently battling the beginnings of a sinus infection. So I'm going to try to deliver this next file in my last 
+   commit. I'm just being honest with my limitations, as life happens, even when you're trying to progress your career. 
+8. Thank you for visiting my app! 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
