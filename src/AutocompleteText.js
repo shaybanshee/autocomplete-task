@@ -1,6 +1,6 @@
 import React from 'react';
 import './AutocompleteText.css';
-import './utils/jsonp'
+import './utils/jsonp';
 
 
 export default class AutocompleteText extends React.Component{
@@ -79,10 +79,14 @@ export default class AutocompleteText extends React.Component{
     render () {
         const { text } = this.state
         return (
+        <div id="AutocompleteTextWrapper">
             <div className="AutocompleteText">
                 <input value={text}  onChange={this.onTextChanged} onKeyDown={this.handleKeyPress} type="text" placeholder=" Enter a College Name or Location to Search" />
                {this.renderSuggestions()}
             </div>
+        </div>
+            
+            
         )
     }
 }

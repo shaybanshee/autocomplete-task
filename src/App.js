@@ -6,7 +6,7 @@ import SearchPage from './SearchPage'
 
 function App() {
   return (
-    <div className="App background">
+    <div>
       <div className="App-Component">
         <SearchPage />
       </div>

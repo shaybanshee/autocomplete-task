@@ -1,0 +1,120 @@
+/*{margin: 0;
+    padding: 0;
+    user-select: none;}*/
+#AutocompleteTextWrapper {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+    }
+    .AutocompleteText { 
+        box-sizing: border-box;
+        position: relative;
+        width: 450px;
+        height: 100px;
+        /*box-shadow: -2px 2px 7px 1px rgba(128,125,128,0.71);*/
+     }
+    .AutocompleteText input {
+        position: center;
+        top: 20px;
+        right: 50px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 63px;
+        border: 3px solid #62d474;
+        border-radius: 50px;
+        padding: 0 20px;
+        outline: none;
+        font-family: Helvetica Neue, sans-serif;
+        font-size: 18px;
+        color: #29313a;
+        transition: all 0.8s ease;
+        z-index: 6;
+     }
+    ::-webkit-input-placeholder{
+        color: rgb(89,164,77);
+        padding: 1rem 1rem;
+    }
+   
+    .AutocompleteText Button{
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        background: #62d474;
+        border-radius: 50%;
+        top: 10px;
+        right: 45px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 80px;
+        font-size: 20px;
+        color: #fff;
+        transition: all 0.8s ease;
+    }
+
+   
+   .AutocompleteText ul {
+       list-style-type: none;
+       text-align: left; 
+       border-top: none;
+       z-index: auto;
+   }
+   
+   .AutocompleteText ul::before {
+       content: "";
+   }
+   
+   .AutocompleteText li {
+       padding: 1rem 1rem;
+       cursor: pointer;
+       width: relative; 
+   }
+   
+   .AutocompleteText li:hover {
+       text-decoration: underline;
+       background-color: rgba(128, 128, 128, 0.20 );
+       border-radius: 50px;
+       width: relative;
+   
+   }
+
+
+body {
+    margin: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(204,242,228);
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+
+ /* .App {
+    text-align: center;
+  }*/
+  
+.header {
+    text-align: center;
+    font-family: Helvetica Neue, sans-serif;
+    font-weight: 300; 
+    font-size: 2rem;
+    color: rgb(89,164,77);
+    padding-bottom: 2rem;
+}
+  
+.App-Component {
+    margin: 150px auto 0 auto;
+    width: 30rem;
+}
+  
+.selectedOption {
+    color: rgba(100, 181, 100, 1);
+    opacity: 50%;
+    align-content: flex-start;
+}
+  

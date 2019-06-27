@@ -3,7 +3,7 @@
     position: relative;
     width: 100%;
     /*box-shadow: -2px 2px 7px 1px rgba(128,125,128,0.71);*/
-}
+ }
 
 .AutocompleteText input {
     width: 100%;
@@ -17,14 +17,12 @@
     padding: 10px 5 px;
     outline: none;
     padding: 1rem;
-}
+ }
 
 .AutocompleteText ul {
     list-style-type: none;
     text-align: left; 
     border-top: none;
-    
-
 }
 
 .AutocompleteText ul::before {
@@ -57,28 +55,27 @@ body {
       monospace;
   }
 
-  .App {
+ /* .App {
     text-align: center;
-  }
+  }*/
   
-  .header{
+.header {
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300; 
     font-size: 3rem;
     color: rgb(89,164,77);
     padding-bottom: 2rem;
+}
   
-  }
-  
-  .App-Component {
+.App-Component {
     margin: 150px auto 0 auto;
     width: 30rem;
-  }
+}
   
-  .selectedOption {
+.selectedOption {
     color: rgba(100, 181, 100, 1);
     opacity: 50%;
     align-content: flex-start;
-  }
+}
   
